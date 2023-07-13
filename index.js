@@ -31398,14 +31398,14 @@ function hY() {
 		t.render(i, e), requestAnimationFrame(n);
 	}
 	n();
-	let r = new mc().load('https://huangnan20030709.github.io/sky.jpg');
+	let r = new mc().load('https://huangnan20030709.github.io/public/sky.jpg');
 	const s = new _c(1e3, 60, 60),
 		a = new Wa({ map: r });
 	s.scale(1, 1, -1);
 	const o = new bt(s, a);
 	i.add(o);
 	const l = document.createElement('video');
-	(l.src = 'https://huangnan20030709.github.io/sky.mp4'),
+	(l.src = 'https://huangnan20030709.github.io/public/sky.mp4'),
 		(l.loop = !0),
 		window.addEventListener('click', () => {
 			if (l.paused) {
@@ -31414,7 +31414,7 @@ function hY() {
 				(a.map = p), (a.map.needsUpdate = !0);
 			}
 		}),
-		new uY().loadAsync('https://huangnan20030709.github.io/050.hdr').then(p => {
+		new uY().loadAsync('https://huangnan20030709.github.io/public/050.hdr').then(p => {
 			(p.mapping = Sa), (i.background = p), (i.environment = p);
 		});
 	const u = new Z2(16777215, 1);
