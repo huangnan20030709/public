@@ -9450,7 +9450,7 @@ const qO =
 		'data:image/jpeg;base64,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',
 	jO =
 		'data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAABAAAAAAeCAYAAACyjmx7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFvSURBVHhe7d3BCcJAEIZRK7QNL57ECjzZhTctwIvetAJbsJOIwYBIhERBnJn3washy8+SncyX60aSJEmSJOXOACBJkiRJUoHaAWC6WAEA8Me2h9Pj+CZJ0mcZAAAAgjACSJK+yQAAABCIEUCS9GkGAACAYHbH8+MoJ0nS8AwAAAABGQEkSWMzAAAABGUEkCSNyQAAABCYEUCSNDQDAABAcEYASdKQDAAAAAn0vQ5wveyb82YGAC0DAABAEn03AYwAAHQMAAAAiRgBAHjHAAAAkIwRAIA+BgAAgISMAAC8MgAAACRlBADgmQEAACAxIwAAHQMAAEBynggE4M4AAABQgBEAAAMAAEARRgCA2gwAAACF+CcAQF0GAACAYowAADUZAAAACjICANRjAAAAKMoIAFCLAQAAIIBfZgQAyKkdALL064+jJEmSJElRMgBIkiRJklQgA4AkSZIkSQUyAEiSJEmSVCADgCRJkiRJ6WuaG31g0Y157btwAAAAAElFTkSuQmCC',
-	XO = '/assets/avatar-b65a8376.jpg';
+	XO = 'https://huangnan20030709.github.io/public/avatar.jpg';
 /**
  * @license
  * Copyright 2010-2022 Three.js Authors
@@ -31398,14 +31398,14 @@ function hY() {
 		t.render(i, e), requestAnimationFrame(n);
 	}
 	n();
-	let r = new mc().load('https://huangnan20030709.github.io/public/sky.jpg');
+	let r = new mc().load('https://huangnan20030709.github.io/sky.jpg');
 	const s = new _c(1e3, 60, 60),
 		a = new Wa({ map: r });
 	s.scale(1, 1, -1);
 	const o = new bt(s, a);
 	i.add(o);
 	const l = document.createElement('video');
-	(l.src = 'https://huangnan20030709.github.io/public/sky.mp4'),
+	(l.src = 'https://huangnan20030709.github.io/sky.mp4'),
 		(l.loop = !0),
 		window.addEventListener('click', () => {
 			if (l.paused) {
@@ -31414,7 +31414,7 @@ function hY() {
 				(a.map = p), (a.map.needsUpdate = !0);
 			}
 		}),
-		new uY().loadAsync('https://huangnan20030709.github.io/public/050.hdr').then(p => {
+		new uY().loadAsync('https://huangnan20030709.github.io/050.hdr').then(p => {
 			(p.mapping = Sa), (i.background = p), (i.environment = p);
 		});
 	const u = new Z2(16777215, 1);
