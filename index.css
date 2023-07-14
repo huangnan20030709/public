@@ -579,13 +579,13 @@
 	overflow: auto;
 }
 .container .footer .list > div:nth-child(1) {
-	height: 195px;
+	height: 130px;
 }
 .container .footer .list > div:nth-child(2) {
 	height: 140px;
 }
 .container .footer .list > div:nth-child(3) {
-	height: 1130px;
+	height: 720px;
 }
 * {
 	margin: 0;
