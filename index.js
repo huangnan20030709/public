@@ -483,7 +483,7 @@ vec4 LinearTosRGB( in vec4 value ) {
 	#else
 		uniform sampler2D envMap;
 	#endif
-	
+
 #endif`,Fk=`#ifdef USE_ENVMAP
 	uniform float reflectivity;
 	#if defined( USE_BUMPMAP ) || defined( USE_NORMALMAP ) || defined( PHONG )
@@ -500,7 +500,7 @@ vec4 LinearTosRGB( in vec4 value ) {
 		#define ENV_WORLDPOS
 	#endif
 	#ifdef ENV_WORLDPOS
-		
+
 		varying vec3 vWorldPosition;
 	#else
 		varying vec3 vReflect;
@@ -1467,22 +1467,22 @@ gl_Position = projectionMatrix * mvPosition;`,PG=`#ifdef DITHERING
 				texture2DCompare( shadowMap, uv + vec2( dx, 0.0 ), shadowCoord.z ) +
 				texture2DCompare( shadowMap, uv + vec2( 0.0, dy ), shadowCoord.z ) +
 				texture2DCompare( shadowMap, uv + texelSize, shadowCoord.z ) +
-				mix( texture2DCompare( shadowMap, uv + vec2( -dx, 0.0 ), shadowCoord.z ), 
+				mix( texture2DCompare( shadowMap, uv + vec2( -dx, 0.0 ), shadowCoord.z ),
 					 texture2DCompare( shadowMap, uv + vec2( 2.0 * dx, 0.0 ), shadowCoord.z ),
 					 f.x ) +
-				mix( texture2DCompare( shadowMap, uv + vec2( -dx, dy ), shadowCoord.z ), 
+				mix( texture2DCompare( shadowMap, uv + vec2( -dx, dy ), shadowCoord.z ),
 					 texture2DCompare( shadowMap, uv + vec2( 2.0 * dx, dy ), shadowCoord.z ),
 					 f.x ) +
-				mix( texture2DCompare( shadowMap, uv + vec2( 0.0, -dy ), shadowCoord.z ), 
+				mix( texture2DCompare( shadowMap, uv + vec2( 0.0, -dy ), shadowCoord.z ),
 					 texture2DCompare( shadowMap, uv + vec2( 0.0, 2.0 * dy ), shadowCoord.z ),
 					 f.y ) +
-				mix( texture2DCompare( shadowMap, uv + vec2( dx, -dy ), shadowCoord.z ), 
+				mix( texture2DCompare( shadowMap, uv + vec2( dx, -dy ), shadowCoord.z ),
 					 texture2DCompare( shadowMap, uv + vec2( dx, 2.0 * dy ), shadowCoord.z ),
 					 f.y ) +
-				mix( mix( texture2DCompare( shadowMap, uv + vec2( -dx, -dy ), shadowCoord.z ), 
+				mix( mix( texture2DCompare( shadowMap, uv + vec2( -dx, -dy ), shadowCoord.z ),
 						  texture2DCompare( shadowMap, uv + vec2( 2.0 * dx, -dy ), shadowCoord.z ),
 						  f.x ),
-					 mix( texture2DCompare( shadowMap, uv + vec2( -dx, 2.0 * dy ), shadowCoord.z ), 
+					 mix( texture2DCompare( shadowMap, uv + vec2( -dx, 2.0 * dy ), shadowCoord.z ),
 						  texture2DCompare( shadowMap, uv + vec2( 2.0 * dx, 2.0 * dy ), shadowCoord.z ),
 						  f.x ),
 					 f.y )
@@ -3187,7 +3187,7 @@ void main() {
 			#include <encodings_fragment>
 			#include <fog_fragment>
 
-		}`};function oY(){const i=new sc,e=new At(75,window.innerWidth/window.innerHeight,.1,2e3);e.position.set(-50,250,700),e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),i.add(e);const t=new Qe({antialias:!0,logarithmicDepthBuffer:!0});t.outputEncoding=it,t.setSize(window.innerWidth,window.innerHeight),window.addEventListener("resize",()=>{e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),t.setSize(window.innerWidth,window.innerHeight)}),document.body.appendChild(t.domElement),new aY(e,t.domElement);function n(){t.render(i,e),requestAnimationFrame(n)}n();let r=new _c().load("https://huangnan20030709.github.io/public/sky.jpg");const s=new pc(1e3,160,160),a=new ka({map:r});s.scale(1,1,-1);const o=new Mt(s,a);i.add(o);const l=new q2(16777215,1);l.position.set(-100,100,10),i.add(l);const c=new lc(850,64),u=new Ss(c,{textureWidth:1024,textureHeight:1024,color:11184895,flowDirection:new fe(1,1),scale:1});u.rotation.x=-Math.PI/2,i.add(u)}const lY={class:"box"},cY={class:"title"},uY={class:"titletext"},hY={key:0,class:"content"},dY={key:1,class:"message"},fY=["innerHTML"],ha={__name:"Item",props:{title:String,tags:Array,message:String},setup(i){return(e,t)=>{const n=$O;return A(),E("div",lY,[v("div",cY,[v("div",uY,Mc(i.title),1)]),i.tags?(A(),E("div",hY,[(A(!0),E(qt,null,Ef(i.tags,r=>(A(),cr(n,{type:"success",key:r,style:{margin:"7px 6px"}},{default:Hn(()=>[tr(Mc(r),1)]),_:2},1024))),128))])):(A(),E("div",dY,[v("span",{class:"text",innerHTML:i.message},null,8,fY)]))])}}};const pY={class:"container"},_Y=Oh('<div class="header"><div class="left"><div class="header-title">个人简历</div><div class="header-message"><div class="top">细心从每一个细节开始</div><div class="bottom">Personal resume</div></div></div><div class="right"><img src="'+OO+'" alt="" style="width:90px;"></div></div><img src="'+UO+'" alt="" style="width:100%;">',2),mY={class:"footer"},gY={class:"basic"},vY={class:"message"},xY=v("div",{class:"line"},[v("div",null,"姓名：黄楠"),v("div",null,"项目经历：10+")],-1),wY={class:"line"},yY={class:"line"},MY=v("div",{class:"avatar"},[v("img",{src:kO,style:{width:"80px","border-radius":"10px"}})],-1),bY={class:"list"},SY={__name:"App",setup(i){Ul(()=>{oY()});const e=["Less/Sass","Vue2","Vue3","Vuex/VueRouter/pinia","React16","React18","ReactRouter/RTK","element-UI","AntDesign-UI","Vant-UI","Typescript","原生微信小程序","Uniapp","Echarts","NuxtJS","ThreeJS","服务端: Express","服务端: NestJS"],t=[`
+		}`};function oY(){const i=new sc,e=new At(75,window.innerWidth/window.innerHeight,.1,2e3);e.position.set(-50,250,700),e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),i.add(e);const t=new Qe({antialias:!0,logarithmicDepthBuffer:!0});t.outputEncoding=it,t.setSize(window.innerWidth,window.innerHeight),window.addEventListener("resize",()=>{e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),t.setSize(window.innerWidth,window.innerHeight)}),document.body.appendChild(t.domElement),new aY(e,t.domElement);function n(){t.render(i,e),requestAnimationFrame(n)}n();let r=new _c().load("https://huangnan20030709.github.io/public/sky.jpg");const s=new pc(1e3,160,160),a=new ka({map:r});s.scale(1,1,-1);const o=new Mt(s,a);i.add(o);const l=new q2(16777215,1);l.position.set(-100,100,10),i.add(l);const c=new lc(850,64),u=new Ss(c,{textureWidth:1024,textureHeight:1024,color:11184895,flowDirection:new fe(1,1),scale:1});u.rotation.x=-Math.PI/2,i.add(u)}const lY={class:"box"},cY={class:"title"},uY={class:"titletext"},hY={key:0,class:"content"},dY={key:1,class:"message"},fY=["innerHTML"],ha={__name:"Item",props:{title:String,tags:Array,message:String},setup(i){return(e,t)=>{const n=$O;return A(),E("div",lY,[v("div",cY,[v("div",uY,Mc(i.title),1)]),i.tags?(A(),E("div",hY,[(A(!0),E(qt,null,Ef(i.tags,r=>(A(),cr(n,{type:"success",key:r,style:{margin:"7px 6px"}},{default:Hn(()=>[tr(Mc(r),1)]),_:2},1024))),128))])):(A(),E("div",dY,[v("span",{class:"text",innerHTML:i.message},null,8,fY)]))])}}};const pY={class:"container"},_Y=Oh('<div class="header"><div class="left"><div class="header-title">个人简历</div><div class="header-message"><div class="top">细心从每一个细节开始</div><div class="bottom">Personal resume</div></div></div><div class="right"><img src="'+OO+'" alt="" style="width:90px;"></div></div><img src="'+UO+'" alt="" style="width:100%;">',2),mY={class:"footer"},gY={class:"basic"},vY={class:"message"},xY=v("div",{class:"line"},[v("div",null,"姓名：黄楠"),v("div",null,"项目经历：10+")],-1),wY={class:"line"},yY={class:"line"},MY=v("div",{class:"avatar"},[v("img",{src:kO,style:{width:"80px","border-radius":"10px"}})],-1),bY={class:"list"},SY={__name:"App",setup(i){Ul(()=>{oY()});const e=["Less/Sass","Vue2","Vue3","Vuex/VueRouter/pinia","React16","React18","ReactRouter/RTK","element-UI","AntDesign-UI","Vant-UI","Typescript","原生微信小程序","Uniapp","Echarts","ThreeJS","NuxtJS","服务端: Express","服务端: NestJS"],t=[`
       <h2>项目一</h2>
       <h3>技术选型：Vue2+Vuex+VueRouter+Less</h3>
       <h4>项目描述：该项目为前台项目，共有12个一级路由页面包括但不限于如
