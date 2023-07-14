@@ -3187,25 +3187,51 @@ void main() {
 			#include <encodings_fragment>
 			#include <fog_fragment>
 
-		}`};function oY(){const i=new sc,e=new At(75,window.innerWidth/window.innerHeight,.1,2e3);e.position.set(-50,250,700),e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),i.add(e);const t=new Qe({antialias:!0,logarithmicDepthBuffer:!0});t.outputEncoding=it,t.setSize(window.innerWidth,window.innerHeight),window.addEventListener("resize",()=>{e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),t.setSize(window.innerWidth,window.innerHeight)}),document.body.appendChild(t.domElement),new aY(e,t.domElement);function n(){t.render(i,e),requestAnimationFrame(n)}n();let r=new _c().load("https://huangnan20030709.github.io/public/sky.jpg");const s=new pc(1e3,160,160),a=new ka({map:r});s.scale(1,1,-1);const o=new Mt(s,a);i.add(o);const l=new q2(16777215,1);l.position.set(-100,100,10),i.add(l);const c=new lc(850,64),u=new Ss(c,{textureWidth:1024,textureHeight:1024,color:11184895,flowDirection:new fe(1,1),scale:1});u.rotation.x=-Math.PI/2,i.add(u)}const lY={class:"box"},cY={class:"title"},uY={class:"titletext"},hY={key:0,class:"content"},dY={key:1,class:"message"},fY=["innerHTML"],ha={__name:"Item",props:{title:String,tags:Array,message:String},setup(i){return(e,t)=>{const n=$O;return A(),E("div",lY,[v("div",cY,[v("div",uY,Mc(i.title),1)]),i.tags?(A(),E("div",hY,[(A(!0),E(qt,null,Ef(i.tags,r=>(A(),cr(n,{type:"success",key:r,style:{margin:"7px 6px"}},{default:Hn(()=>[tr(Mc(r),1)]),_:2},1024))),128))])):(A(),E("div",dY,[v("span",{class:"text",innerHTML:i.message},null,8,fY)]))])}}};const pY={class:"container"},_Y=Oh('<div class="header"><div class="left"><div class="header-title">个人简历</div><div class="header-message"><div class="top">细心从每一个细节开始</div><div class="bottom">Personal resume</div></div></div><div class="right"><img src="'+OO+'" alt="" style="width:90px;"></div></div><img src="'+UO+'" alt="" style="width:100%;">',2),mY={class:"footer"},gY={class:"basic"},vY={class:"message"},xY=v("div",{class:"line"},[v("div",null,"姓名：黄楠"),v("div",null,"项目经历：10+")],-1),wY={class:"line"},yY={class:"line"},MY=v("div",{class:"avatar"},[v("img",{src:kO,style:{width:"80px","border-radius":"10px"}})],-1),bY={class:"list"},SY={__name:"App",setup(i){Ul(()=>{oY()});const e=["Less/Sass","Vue2","Vue3","Vuex/VueRouter/pinia","React16","React18","ReactRouter/RTK","element-UI","AntDesign-UI","Vant-UI","Typescript","原生微信小程序","Uniapp","Echarts","ThreeJS","NuxtJS","服务端: Express","服务端: NestJS"],t=[`
+		}`};function oY(){const i=new sc,e=new At(75,window.innerWidth/window.innerHeight,.1,2e3);e.position.set(-50,250,700),e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),i.add(e);const t=new Qe({antialias:!0,logarithmicDepthBuffer:!0});t.outputEncoding=it,t.setSize(window.innerWidth,window.innerHeight),window.addEventListener("resize",()=>{e.aspect=window.innerWidth/window.innerHeight,e.updateProjectionMatrix(),t.setSize(window.innerWidth,window.innerHeight)}),document.body.appendChild(t.domElement),new aY(e,t.domElement);function n(){t.render(i,e),requestAnimationFrame(n)}n();let r=new _c().load("https://huangnan20030709.github.io/public/sky.jpg");const s=new pc(1e3,160,160),a=new ka({map:r});s.scale(1,1,-1);const o=new Mt(s,a);i.add(o);const l=new q2(16777215,1);l.position.set(-100,100,10),i.add(l);const c=new lc(850,64),u=new Ss(c,{textureWidth:1024,textureHeight:1024,color:11184895,flowDirection:new fe(1,1),scale:1});u.rotation.x=-Math.PI/2,i.add(u)}const lY={class:"box"},cY={class:"title"},uY={class:"titletext"},hY={key:0,class:"content"},dY={key:1,class:"message"},fY=["innerHTML"],ha={__name:"Item",props:{title:String,tags:Array,message:String},setup(i){return(e,t)=>{const n=$O;return A(),E("div",lY,[v("div",cY,[v("div",uY,Mc(i.title),1)]),i.tags?(A(),E("div",hY,[(A(!0),E(qt,null,Ef(i.tags,r=>(A(),cr(n,{type:"success",key:r,style:{margin:"7px 6px"}},{default:Hn(()=>[tr(Mc(r),1)]),_:2},1024))),128))])):(A(),E("div",dY,[v("span",{class:"text",innerHTML:i.message},null,8,fY)]))])}}};const pY={class:"container"},_Y=Oh('<div class="header"><div class="left"><div class="header-title">个人简历</div><div class="header-message"><div class="top">细心从每一个细节开始</div><div class="bottom">Personal resume</div></div></div><div class="right"><img src="'+OO+'" alt="" style="width:90px;"></div></div><img src="'+UO+'" alt="" style="width:100%;">',2),mY={class:"footer"},gY={class:"basic"},vY={class:"message"},xY=v("div",{class:"line"},[v("div",null,"姓名：黄楠"),v("div",null,"项目经历：10+")],-1),wY={class:"line"},yY={class:"line"},MY=v("div",{class:"avatar"},[v("img",{src:kO,style:{width:"80px","border-radius":"10px"}})],-1),bY={class:"list"},SY={__name:"App",setup(i){Ul(()=>{oY()});const e = [
+				'Less/Sass',
+				'Typescript',
+				'Vue2',
+				'Vue3',
+				'Vuex/VueRouter/pinia',
+				'React16',
+				'React18',
+				'ReactRouter/RTK',
+				'element-UI',
+				'AntDesign-UI',
+				'Vant-UI',
+				'原生微信小程序',
+				'Uniapp',
+				'Echarts',
+				'ThreeJS',
+				'NuxtJS',
+				'服务端: Express',
+				'服务端: NestJS',
+			],
+			t = [
+				`
       <h2>项目一</h2>
       <h3>技术选型：Vue2+Vuex+VueRouter+Less</h3>
       <h4>项目描述：该项目为前台项目，共有12个一级路由页面包括但不限于如
       首页，购物车页，支付页，登录页</h4><p>主要负责项目的静态搭建，路由表搭建，api接口函数的封装与vuex的全局状态连接，及数据展示和用户交互效果的打磨，后期完善了用户的路由鉴权，提高了应用的逻辑性。改进了用户界面和交互方式，提升了用户对应用的使用体验。</p>
-  `,`
+  `,
+				`
       <h2>项目二</h2>
       <h3>技术选型：Vue2+Vuex+VueRouter+ElementUI+Echarts</h3>
       <h4>项目描述：该项目为后台管理项目，主要功能为SKU,SPU的增删改查，以及不同账号的权限管理</h4><p>项目为标准工程化项目，有团队标准的代码校验eslint和代码格式化prettierrc工具来要求代码质量，使用了github上的后台管理系统的vue2模版进行二次开发，完成了管理员能在此系统上进行商品管理，权限管理，角色管理，用户访问数据统计等功能，该项目难点在于，数据都放在store,而且同一数据有多组件引用修改，需要弄清各组件数据依托关系，很多解耦合</p>
-  `,`
+  `,
+				`
       <h2>项目三</h2>
       <h3>技术选型：Vue2+Uniapp+Vant+Less</h3>
       <h4>项目描述：该项目为某商贸城，用与展示家具类商品的小程序项目</h4><p>该小程序项目使用uniapp框架进行开发，共有tabbar页面四个，六个路由页面，主要业务在商品的展示，及搜索业务和商品的收藏，以及简单的store数据管理，在用户登录后，需要把用户信息存储于store，多组件共享数据</p>
-  `,`
+  `,
+				`
       <h2>项目四</h2>
       <h3>技术选型：Vue3+TS+Pinia+ElementPlus+Sass+Echarts</h3>
       <h4>项目描述：该项目前期封装后台管理项目模板，后期使用vue3复刻项目二</h4><p>该项目内容包括layout组件，敏捷的响应式布局，还有随新添加路由，新增左侧路由切换项，后期复刻了把项目二的功能重构到vue3项目中，且比项目二有更清晰的文件结构，包括但不限于store相关，api相关，vueUse函数，补充了项目二中缺少的表单验证。</p>
-  `,`
+  `,
+				`
       <h2>项目五</h2>
       <h3>技术选型：React16 + AntD + React-Reduce+ Echarts</h3>
       <h4>项目描述：该项目是仿照Gmail设计，供内网使用的邮箱系统，负责后台管理模块的开发</h4><p>该项目AntD在此项目中举足轻重，整合了全局路由/数据请求/状态管理等一系列实用的功能。由于这个项目的重点还是在页面的展示效果上，所以也没遇到其他react相关问题，不过在经历完这个项目后，倒是对Echarts/Bizcharts的使用更加熟练了</p>
-  `];let n="";return t.forEach(r=>{n=n+r}),(r,s)=>{const a=ro("Avatar"),o=fl,l=ro("phone"),c=ro("School");return A(),E("div",pY,[_Y,v("div",mY,[v("div",gY,[v("div",vY,[xY,v("div",wY,[v("div",null,[Je(o,null,{default:Hn(()=>[Je(a)]),_:1}),tr("邮箱：2864957564@qq.com ")]),v("div",null,[Je(o,null,{default:Hn(()=>[Je(l)]),_:1}),tr("电话：18179495311 ")])]),v("div",yY,[v("div",null,[Je(o,null,{default:Hn(()=>[Je(c)]),_:1}),tr("工作年限：3年 ")]),v("div",null,[Je(o,null,{default:Hn(()=>[Je(a)]),_:1}),tr("职位：前端开发 ")])])]),MY]),v("div",bY,[Je(ha,{title:"自我介绍",message:"在前端技术变更快速的今天，作为开发人员，懂得各式工具的api设计习惯，能快速学习新技术，希望有机会成为贵公司的一员。<h3>个人主要职责有：</h3><p>参与网站UI设计并规范协同开发流程</p><p>分析需求，协调后端，编写基本开发文档</p><p>独立完成前端开发任务</p><p>持续维护、优化、按照要求完成项目</p>"}),Je(ha,{title:"技术栈",tags:e}),Je(ha,{title:"项目经历",message:wt(n)},null,8,["message"]),Je(ha,{title:"个人对前端开发的理解",message:"<h3>回顾</h3>回顾一下传统开发的弊端：大型项目难以维护，大部分代码缺乏分割，容易造成依赖混乱。<h3>工程化解决了开发层面遇到的问题</h3>引入了模块化和包的概念按需导出和导入机制,自动化的代码检测流程,编译打包机制可以让使用开发效率更高的编码方式，比如 Vue 组件、 CSS 的各种预处理器，引入了 Tree Shaking 机制，清理没有用到的代码，还有非常多的体验提升，列举不完。<h3>团队协作的优势</h3>以前的项目结构比较看写代码的人的喜好，虽然一般在研发部门里都有 “团队规范” 这种东西，但靠自觉性去配合的事情，还是比较难做到统一，特别是项目很赶的时候,统一的代码风格,可复用的模块和组件,代码健壮性有保障"})])])])}}},Y2=D1(SY);for(const[i,e]of Object.entries(xO))Y2.component(i,e);Y2.mount("#app");
+  `,
+			];let n="";return t.forEach(r=>{n=n+r}),(r,s)=>{const a=ro("Avatar"),o=fl,l=ro("phone"),c=ro("School");return A(),E("div",pY,[_Y,v("div",mY,[v("div",gY,[v("div",vY,[xY,v("div",wY,[v("div",null,[Je(o,null,{default:Hn(()=>[Je(a)]),_:1}),tr("邮箱：2864957564@qq.com ")]),v("div",null,[Je(o,null,{default:Hn(()=>[Je(l)]),_:1}),tr("电话：18179495311 ")])]),v("div",yY,[v("div",null,[Je(o,null,{default:Hn(()=>[Je(c)]),_:1}),tr("工作年限：3年 ")]),v("div",null,[Je(o,null,{default:Hn(()=>[Je(a)]),_:1}),tr("职位：前端开发 ")])])]),MY]),v("div",bY,[Je(ha,{title:"自我介绍",message:"在前端技术变更快速的今天，作为开发人员，懂得各式工具的api设计习惯，能快速学习新技术，希望有机会成为贵公司的一员。<h3>个人主要职责有：</h3><p>参与网站UI设计并规范协同开发流程</p><p>分析需求，协调后端，编写基本开发文档</p><p>独立完成前端开发任务</p><p>持续维护、优化、按照要求完成项目</p>"}),Je(ha,{title:"技术栈",tags:e}),Je(ha,{title:"项目经历",message:wt(n)},null,8,["message"]),Je(ha,{title:"个人对前端开发的理解",message:"<h3>回顾</h3>回顾一下传统开发的弊端：大型项目难以维护，大部分代码缺乏分割，容易造成依赖混乱。<h3>工程化解决了开发层面遇到的问题</h3>引入了模块化和包的概念按需导出和导入机制,自动化的代码检测流程,编译打包机制可以让使用开发效率更高的编码方式，比如 Vue 组件、 CSS 的各种预处理器，引入了 Tree Shaking 机制，清理没有用到的代码，还有非常多的体验提升，列举不完。<h3>团队协作的优势</h3>以前的项目结构比较看写代码的人的喜好，虽然一般在研发部门里都有 “团队规范” 这种东西，但靠自觉性去配合的事情，还是比较难做到统一，特别是项目很赶的时候,统一的代码风格,可复用的模块和组件,代码健壮性有保障"})])])])}}},Y2=D1(SY);for(const[i,e]of Object.entries(xO))Y2.component(i,e);Y2.mount("#app");
